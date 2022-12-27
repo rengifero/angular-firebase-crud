@@ -8,7 +8,7 @@ import { FirebaseService } from '../services/firebase.service';
 @Component({
   selector: 'app-new-user',
   templateUrl: './new-user.component.html',
-  styleUrls: ['./new-user.component.scss']
+
 })
 export class NewUserComponent implements OnInit {
 
@@ -60,7 +60,7 @@ export class NewUserComponent implements OnInit {
   }
 
   resetFields(){
-    this.avatarLink = "https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg";
+    this.avatarLink = "https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/127.jpg";
     this.exampleForm = this.fb.group({
       name: new FormControl('', Validators.required),
       surname: new FormControl('', Validators.required),
